@@ -1,0 +1,39 @@
+{
+  "name": "kutty-sih",
+  "version": "1.0.0",
+  "description": "Kutty SIH - Smart India Hackathon Team Management & Judging Platform",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm install && npm --prefix client install && npm --prefix client run build",
+    "seed": "node server/seed.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "qrcode": "^1.5.4",
+    "uuid": "^11.1.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "hackathon",
+    "sih",
+    "judging",
+    "scorecard",
+    "allocation"
+  ],
+  "author": "",
+  "license": "ISC"
+}
